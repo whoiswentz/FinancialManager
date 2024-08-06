@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/vinicios.wentz/Downloads/FinancialManager/FinancialManager.Api/FinancialManager.Api.csproj": {}
+    "/Users/vinicioswentz/Library/CloudStorage/OneDrive-Personal/FinancialManager/FinancialManager.Api/FinancialManager.Api.csproj": {}
   },
   "projects": {
-    "/Users/vinicios.wentz/Downloads/FinancialManager/FinancialManager.Api/FinancialManager.Api.csproj": {
+    "/Users/vinicioswentz/Library/CloudStorage/OneDrive-Personal/FinancialManager/FinancialManager.Api/FinancialManager.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/vinicios.wentz/Downloads/FinancialManager/FinancialManager.Api/FinancialManager.Api.csproj",
+        "projectUniqueName": "/Users/vinicioswentz/Library/CloudStorage/OneDrive-Personal/FinancialManager/FinancialManager.Api/FinancialManager.Api.csproj",
         "projectName": "FinancialManager.Api",
-        "projectPath": "/Users/vinicios.wentz/Downloads/FinancialManager/FinancialManager.Api/FinancialManager.Api.csproj",
-        "packagesPath": "/Users/vinicios.wentz/.nuget/packages/",
-        "outputPath": "/Users/vinicios.wentz/Downloads/FinancialManager/FinancialManager.Api/obj/",
+        "projectPath": "/Users/vinicioswentz/Library/CloudStorage/OneDrive-Personal/FinancialManager/FinancialManager.Api/FinancialManager.Api.csproj",
+        "packagesPath": "/Users/vinicioswentz/.nuget/packages/",
+        "outputPath": "/Users/vinicioswentz/Library/CloudStorage/OneDrive-Personal/FinancialManager/FinancialManager.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/vinicios.wentz/.nuget/NuGet/NuGet.Config"
+          "/Users/vinicioswentz/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -25,7 +25,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/vinicioswentz/Library/CloudStorage/OneDrive-Personal/FinancialManager/FinancialManager.Core/FinancialManager.Core.csproj": {
+                "projectPath": "/Users/vinicioswentz/Library/CloudStorage/OneDrive-Personal/FinancialManager/FinancialManager.Core/FinancialManager.Core.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -44,6 +48,16 @@
           "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[8.0.7, )"
             },
@@ -71,7 +85,65 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/vinicioswentz/Library/CloudStorage/OneDrive-Personal/FinancialManager/FinancialManager.Core/FinancialManager.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/vinicioswentz/Library/CloudStorage/OneDrive-Personal/FinancialManager/FinancialManager.Core/FinancialManager.Core.csproj",
+        "projectName": "FinancialManager.Core",
+        "projectPath": "/Users/vinicioswentz/Library/CloudStorage/OneDrive-Personal/FinancialManager/FinancialManager.Core/FinancialManager.Core.csproj",
+        "packagesPath": "/Users/vinicioswentz/.nuget/packages/",
+        "outputPath": "/Users/vinicioswentz/Library/CloudStorage/OneDrive-Personal/FinancialManager/FinancialManager.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/vinicioswentz/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
