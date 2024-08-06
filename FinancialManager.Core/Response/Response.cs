@@ -5,7 +5,7 @@ namespace FinancialManager.Core.Response;
 public class Response<T>
 {
     private readonly int _code = Constants.DefaultHttpCode;
-    
+
     public T? Data { get; set; }
     public int? Code { get; set; }
 
@@ -16,8 +16,10 @@ public class Response<T>
     }
 
     [JsonConstructor]
-    protected Response() => _code = Constants.DefaultHttpCode;
-    
-    [JsonIgnore]
-    public bool IsSuccess => _code is >= 200 and <= 299;
+    protected Response()
+    {
+        _code = Constants.DefaultHttpCode;
+    }
+
+    [JsonIgnore] public bool IsSuccess => _code is >= 200 and <= 299;
 }

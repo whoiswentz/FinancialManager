@@ -9,13 +9,8 @@ var connectionString = builder.Configuration
 
 builder.Services
     .AddEndpointsApiExplorer()
-    .AddSwaggerGen(options => 
-    {
-        options.CustomSchemaIds(type => type.FullName);
-    }).AddDbContext<AppDbContext>(x =>
-    {
-        x.UseSqlServer(connectionString);
-    });
+    .AddSwaggerGen(options => { options.CustomSchemaIds(type => type.FullName); })
+    .AddDbContext<AppDbContext>(x => { x.UseSqlServer(connectionString); });
 builder.Services.AddTransient<Handler>();
 
 var app = builder.Build();
@@ -23,10 +18,7 @@ var app = builder.Build();
 app.UseSwagger().UseSwaggerUI();
 
 app
-    .MapPost("/v1/transactions", (Request request, Handler handler) =>
-    {
-        handler.Handle(request);
-    })
+    .MapPost("/v1/transactions", (Request request, Handler handler) => { handler.Handle(request); })
     .WithName("Transaction: Create")
     .WithSummary("Creates a new transaction")
     .Produces<Response>();
@@ -43,7 +35,7 @@ public class Handler(AppDbContext context)
             Description = request.Description
         }).Entity;
         context.SaveChanges();
-        
+
         return new Response
         {
             Id = category.Id,
@@ -55,7 +47,6 @@ public class Handler(AppDbContext context)
 
 public record Request
 {
-    
     public string Title { get; set; } = null!;
     public string Description { get; set; } = null!;
 }

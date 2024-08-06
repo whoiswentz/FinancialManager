@@ -9,7 +9,7 @@ public class PageResponse<T> : Response<T>
         T? data,
         int totalCount,
         int currentPage = Constants.DefaultCurrentPage,
-        int pageSize = Constants.DefaultPageSize) 
+        int pageSize = Constants.DefaultPageSize)
         : base(data)
     {
         Data = data;
@@ -17,16 +17,17 @@ public class PageResponse<T> : Response<T>
         CurrentPage = currentPage;
         PageSize = pageSize;
     }
-    
+
     public PageResponse(
-        T? data, 
-        int code = Constants.DefaultHttpCode) 
-        : base(data, code) 
-    {}
-    
+        T? data,
+        int code = Constants.DefaultHttpCode)
+        : base(data, code)
+    {
+    }
+
     public int CurrentPage { get; set; }
     public int PageSize { get; set; }
     public int TotalCount { get; set; }
-    
+
     public int TotalPages => (int)Math.Ceiling(TotalCount / (double)PageSize);
 }
