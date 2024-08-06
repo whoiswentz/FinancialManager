@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/vinicios.wentz/Downloads/FinancialManager/FinancialManager.Core/FinancialManager.Core.csproj": {}
+    "/Users/vinicioswentz/Library/CloudStorage/OneDrive-Personal/FinancialManager/FinancialManager.Core/FinancialManager.Core.csproj": {}
   },
   "projects": {
-    "/Users/vinicios.wentz/Downloads/FinancialManager/FinancialManager.Core/FinancialManager.Core.csproj": {
+    "/Users/vinicioswentz/Library/CloudStorage/OneDrive-Personal/FinancialManager/FinancialManager.Core/FinancialManager.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/vinicios.wentz/Downloads/FinancialManager/FinancialManager.Core/FinancialManager.Core.csproj",
+        "projectUniqueName": "/Users/vinicioswentz/Library/CloudStorage/OneDrive-Personal/FinancialManager/FinancialManager.Core/FinancialManager.Core.csproj",
         "projectName": "FinancialManager.Core",
-        "projectPath": "/Users/vinicios.wentz/Downloads/FinancialManager/FinancialManager.Core/FinancialManager.Core.csproj",
-        "packagesPath": "/Users/vinicios.wentz/.nuget/packages/",
-        "outputPath": "/Users/vinicios.wentz/Downloads/FinancialManager/FinancialManager.Core/obj/",
+        "projectPath": "/Users/vinicioswentz/Library/CloudStorage/OneDrive-Personal/FinancialManager/FinancialManager.Core/FinancialManager.Core.csproj",
+        "packagesPath": "/Users/vinicioswentz/.nuget/packages/",
+        "outputPath": "/Users/vinicioswentz/Library/CloudStorage/OneDrive-Personal/FinancialManager/FinancialManager.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/vinicios.wentz/.nuget/NuGet/NuGet.Config"
+          "/Users/vinicioswentz/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -32,6 +32,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -53,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

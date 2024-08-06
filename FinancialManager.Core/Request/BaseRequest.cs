@@ -1,6 +1,6 @@
 namespace FinancialManager.Core.Request;
 
-public class BaseRequest
+public abstract class BaseRequest
 {
-    
+    public Guid UserId { get; set; }
 }

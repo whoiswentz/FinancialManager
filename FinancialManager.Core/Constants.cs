@@ -1,6 +1,9 @@
 namespace FinancialManager.Core;
 
-public class Constants
+public static class Constants
 {
-    
+    public const int DefaultHttpCode = 200;
+    public const int DefaultPageNumber = 1;
+    public const int DefaultPageSize = 25;
+    public const int DefaultCurrentPage = 1;
 }
