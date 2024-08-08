@@ -10,3 +10,16 @@
 /Users/vinicioswentz/Library/CloudStorage/OneDrive-Personal/FinancialManager/FinancialManager.Core/obj/Debug/net8.0/refint/FinancialManager.Core.dll
 /Users/vinicioswentz/Library/CloudStorage/OneDrive-Personal/FinancialManager/FinancialManager.Core/obj/Debug/net8.0/FinancialManager.Core.pdb
 /Users/vinicioswentz/Library/CloudStorage/OneDrive-Personal/FinancialManager/FinancialManager.Core/obj/Debug/net8.0/ref/FinancialManager.Core.dll
+/Users/vinicioswentz/Documents/FinancialManager/FinancialManager.Core/bin/Debug/net8.0/FinancialManager.Core.deps.json
+/Users/vinicioswentz/Documents/FinancialManager/FinancialManager.Core/bin/Debug/net8.0/FinancialManager.Core.dll
+/Users/vinicioswentz/Documents/FinancialManager/FinancialManager.Core/bin/Debug/net8.0/FinancialManager.Core.pdb
+/Users/vinicioswentz/Documents/FinancialManager/FinancialManager.Core/obj/Debug/net8.0/FinancialManager.Core.csproj.AssemblyReference.cache
+/Users/vinicioswentz/Documents/FinancialManager/FinancialManager.Core/obj/Debug/net8.0/FinancialManager.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/vinicioswentz/Documents/FinancialManager/FinancialManager.Core/obj/Debug/net8.0/FinancialManager.Core.AssemblyInfoInputs.cache
+/Users/vinicioswentz/Documents/FinancialManager/FinancialManager.Core/obj/Debug/net8.0/FinancialManager.Core.AssemblyInfo.cs
+/Users/vinicioswentz/Documents/FinancialManager/FinancialManager.Core/obj/Debug/net8.0/FinancialManager.Core.csproj.CoreCompileInputs.cache
+/Users/vinicioswentz/Documents/FinancialManager/FinancialManager.Core/obj/Debug/net8.0/FinancialManager.Core.sourcelink.json
+/Users/vinicioswentz/Documents/FinancialManager/FinancialManager.Core/obj/Debug/net8.0/FinancialManager.Core.dll
+/Users/vinicioswentz/Documents/FinancialManager/FinancialManager.Core/obj/Debug/net8.0/refint/FinancialManager.Core.dll
+/Users/vinicioswentz/Documents/FinancialManager/FinancialManager.Core/obj/Debug/net8.0/FinancialManager.Core.pdb
+/Users/vinicioswentz/Documents/FinancialManager/FinancialManager.Core/obj/Debug/net8.0/ref/FinancialManager.Core.dll

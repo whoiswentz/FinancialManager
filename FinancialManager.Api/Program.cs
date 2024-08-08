@@ -1,5 +1,7 @@
 using FinancialManager.Api.Data;
 using FinancialManager.Core.Models;
+using FinancialManager.Core.Request.Categories;
+using FinancialManager.Core.Response;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -18,42 +20,9 @@ var app = builder.Build();
 app.UseSwagger().UseSwaggerUI();
 
 app
-    .MapPost("/v1/transactions", (Request request, Handler handler) => { handler.Handle(request); })
+    .MapPost("/v1/transactions", (CreateCategory request, Handler handler) => { handler.Handle(request); })
     .WithName("Transaction: Create")
     .WithSummary("Creates a new transaction")
-    .Produces<Response>();
+    .Produces<Response<Category>>();
 
 app.Run();
-
-public class Handler(AppDbContext context)
-{
-    public Response Handle(Request request)
-    {
-        var category = context.Categories.Add(new Category
-        {
-            Title = request.Title,
-            Description = request.Description
-        }).Entity;
-        context.SaveChanges();
-
-        return new Response
-        {
-            Id = category.Id,
-            Title = category.Title,
-            Description = category.Description
-        };
-    }
-}
-
-public record Request
-{
-    public string Title { get; set; } = null!;
-    public string Description { get; set; } = null!;
-}
-
-public record Response
-{
-    public Guid Id { get; set; }
-    public string? Title { get; set; } = null!;
-    public string? Description { get; set; } = null!;
-}

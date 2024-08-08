@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/vinicioswentz/Library/CloudStorage/OneDrive-Personal/FinancialManager/FinancialManager.Core/FinancialManager.Core.csproj": {}
+    "/Users/vinicioswentz/Documents/FinancialManager/FinancialManager.Core/FinancialManager.Core.csproj": {}
   },
   "projects": {
-    "/Users/vinicioswentz/Library/CloudStorage/OneDrive-Personal/FinancialManager/FinancialManager.Core/FinancialManager.Core.csproj": {
+    "/Users/vinicioswentz/Documents/FinancialManager/FinancialManager.Core/FinancialManager.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/vinicioswentz/Library/CloudStorage/OneDrive-Personal/FinancialManager/FinancialManager.Core/FinancialManager.Core.csproj",
+        "projectUniqueName": "/Users/vinicioswentz/Documents/FinancialManager/FinancialManager.Core/FinancialManager.Core.csproj",
         "projectName": "FinancialManager.Core",
-        "projectPath": "/Users/vinicioswentz/Library/CloudStorage/OneDrive-Personal/FinancialManager/FinancialManager.Core/FinancialManager.Core.csproj",
+        "projectPath": "/Users/vinicioswentz/Documents/FinancialManager/FinancialManager.Core/FinancialManager.Core.csproj",
         "packagesPath": "/Users/vinicioswentz/.nuget/packages/",
-        "outputPath": "/Users/vinicioswentz/Library/CloudStorage/OneDrive-Personal/FinancialManager/FinancialManager.Core/obj/",
+        "outputPath": "/Users/vinicioswentz/Documents/FinancialManager/FinancialManager.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/vinicioswentz/.nuget/NuGet/NuGet.Config"
@@ -42,6 +42,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
