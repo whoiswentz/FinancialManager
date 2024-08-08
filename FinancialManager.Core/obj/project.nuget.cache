@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "nK6qk1zZVJI=",
+  "dgSpecHash": "fVi9ZA/Wq0Y=",
   "success": true,
-  "projectFilePath": "/Users/vinicioswentz/Documents/FinancialManager/FinancialManager.Core/FinancialManager.Core.csproj",
+  "projectFilePath": "/Users/vinicios.wentz/Documents/FinancialManager/FinancialManager.Core/FinancialManager.Core.csproj",
   "expectedPackageFiles": [
-    "/Users/vinicioswentz/.nuget/packages/fluentvalidation/11.5.1/fluentvalidation.11.5.1.nupkg.sha512",
-    "/Users/vinicioswentz/.nuget/packages/fluentvalidation.aspnetcore/11.3.0/fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
-    "/Users/vinicioswentz/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.5.1/fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
-    "/Users/vinicioswentz/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/2.1.0/microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512"
+    "/Users/vinicios.wentz/.nuget/packages/fluentvalidation/11.5.1/fluentvalidation.11.5.1.nupkg.sha512",
+    "/Users/vinicios.wentz/.nuget/packages/fluentvalidation.aspnetcore/11.3.0/fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "/Users/vinicios.wentz/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.5.1/fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
+    "/Users/vinicios.wentz/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/2.1.0/microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512"
   ],
   "logs": []
 }
