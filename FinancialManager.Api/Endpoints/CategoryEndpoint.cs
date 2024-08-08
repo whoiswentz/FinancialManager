@@ -2,41 +2,52 @@ using FinancialManager.Core.Handlers;
 using FinancialManager.Core.Models;
 using FinancialManager.Core.Request.Categories;
 using FinancialManager.Core.Response;
+using Microsoft.AspNetCore.Mvc;
 
 namespace FinancialManager.Api.Endpoints;
 
 public class CategoryEndpoint : IAppEndpoint
 {
-    public void MapRoutes(IEndpointRouteBuilder routes)
+    public void MapRoutes(IEndpointRouteBuilder endpoints)
     {
-        routes
+        endpoints
             .MapPost("/v1/categories",
-                async (CreateCategoryRequest request, ICategoryHandler handler) =>
-                    await handler.CreateAsync(request))
+                async ([FromBody] CreateCategoryRequest request, ICategoryHandler handler) =>
+                await handler.CreateAsync(request))
             .WithName("Categories: Create")
             .WithSummary("Creates a new Category")
             .Produces<Response<Category>>();
-        
-        routes
+
+        endpoints
             .MapPut("/v1/categories/{id}",
-                async (Guid id, UpdateCategoryRequest request, ICategoryHandler handler) =>
+                async (Guid id, [FromBody] UpdateCategoryRequest request, ICategoryHandler handler) =>
                 {
                     request.Id = id;
-                    await handler.UpdateAsync(request);
+                    return await handler.UpdateAsync(request);
                 })
             .WithName("Categories: Update")
             .WithSummary("Update Category")
             .Produces<Response<Category>>();
-        
-        routes
+
+        endpoints
             .MapDelete("/v1/categories/{id}",
-                async (Guid id, DeleteCategoryRequest request, ICategoryHandler handler) =>
+                async (Guid id, [FromBody] DeleteCategoryRequest request, ICategoryHandler handler) =>
                 {
                     request.Id = id;
-                    await handler.DeleteAsync(request);
+                    return await handler.DeleteAsync(request);
                 })
             .WithName("Categories: Delete")
             .WithSummary("Delete Category")
+            .Produces<Response<Category>>();
+
+        endpoints
+            .MapGet("/v1/categories/{id}",
+                async (Guid id, ICategoryHandler handler) => await handler.GetByIdAsync(new GetCategoryByIdRequest
+                {
+                    Id = id
+                }))
+            .WithName("Categories: Get")
+            .WithSummary("Get Category")
             .Produces<Response<Category>>();
     }
 }

@@ -147,19 +147,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/vinicios.wentz/.nuget/packages/": {}
+    "/Users/vinicioswentz/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/vinicios.wentz/Documents/FinancialManager/FinancialManager.Core/FinancialManager.Core.csproj",
+      "projectUniqueName": "/Users/vinicioswentz/Documents/FinancialManager/FinancialManager.Core/FinancialManager.Core.csproj",
       "projectName": "FinancialManager.Core",
-      "projectPath": "/Users/vinicios.wentz/Documents/FinancialManager/FinancialManager.Core/FinancialManager.Core.csproj",
-      "packagesPath": "/Users/vinicios.wentz/.nuget/packages/",
-      "outputPath": "/Users/vinicios.wentz/Documents/FinancialManager/FinancialManager.Core/obj/",
+      "projectPath": "/Users/vinicioswentz/Documents/FinancialManager/FinancialManager.Core/FinancialManager.Core.csproj",
+      "packagesPath": "/Users/vinicioswentz/.nuget/packages/",
+      "outputPath": "/Users/vinicioswentz/Documents/FinancialManager/FinancialManager.Core/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/vinicios.wentz/.nuget/NuGet/NuGet.Config"
+        "/Users/vinicioswentz/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -177,11 +177,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -209,7 +204,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -29,10 +29,7 @@ public class CategoryHandler(AppDbContext context) : ICategoryHandler
     {
         var category = await context.Categories
             .FirstOrDefaultAsync(x => x.Id == request.Id && x.UserId == request.UserId);
-        if (category is null)
-        {
-            return new Response<Category?>(null, 404, "Category not found");
-        }
+        if (category is null) return new Response<Category?>(null, 404, "Category not found");
 
         category.Title = request.Title;
         category.Description = request.Description;
@@ -47,10 +44,7 @@ public class CategoryHandler(AppDbContext context) : ICategoryHandler
     {
         var category = await context.Categories
             .FirstOrDefaultAsync(x => x.Id == request.Id && x.UserId == request.UserId);
-        if (category is null)
-        {
-            return new Response<Category?>(null, 404, "Category not found");
-        }
+        if (category is null) return new Response<Category?>(null, 404, "Category not found");
 
         context.Categories.Remove(category);
         await context.SaveChangesAsync();
@@ -58,9 +52,14 @@ public class CategoryHandler(AppDbContext context) : ICategoryHandler
         return new Response<Category?>(category, message: "Category deleted");
     }
 
-    public Task<Response<Category?>> GetByIdAsync(GetCategoryByIdRequest request)
+    public async Task<Response<Category?>> GetByIdAsync(GetCategoryByIdRequest request)
     {
-        throw new NotImplementedException();
+        var category = await context.Categories.AsNoTracking()
+            .FirstOrDefaultAsync(x => x.Id == request.Id);
+
+        return category is null
+            ? new Response<Category?>(null, 404, "Category not found")
+            : new Response<Category?>(category);
     }
 
     public Task<Response<List<Category>>> GetAllAsync(CreateCategoryRequest request)
