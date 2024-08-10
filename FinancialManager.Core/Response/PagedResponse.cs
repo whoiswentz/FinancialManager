@@ -2,10 +2,10 @@ using System.Text.Json.Serialization;
 
 namespace FinancialManager.Core.Response;
 
-public class PageResponse<T> : Response<T>
+public class PagedResponse<T> : Response<T>
 {
     [JsonConstructor]
-    public PageResponse(
+    public PagedResponse(
         T? data,
         int totalCount,
         int currentPage = Constants.DefaultCurrentPage,
@@ -18,7 +18,7 @@ public class PageResponse<T> : Response<T>
         PageSize = pageSize;
     }
 
-    public PageResponse(
+    public PagedResponse(
         T? data,
         int code = Constants.DefaultHttpCode)
         : base(data, code)
