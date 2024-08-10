@@ -62,8 +62,18 @@ public class CategoryHandler(AppDbContext context) : ICategoryHandler
             : new Response<Category?>(category);
     }
 
-    public Task<Response<List<Category>>> GetAllAsync(CreateCategoryRequest request)
+    public async Task<PagedResponse<List<Category>>> GetAllAsync(GetAllCategoriesRequest request)
     {
-        throw new NotImplementedException();
+        var query = context.Categories
+            .AsNoTracking()
+            .Where(x => x.UserId == request.UserId)
+            .OrderBy(x => x.Title);
+        var categories = await query
+            .Skip((request.PageSize - 1) * request.PageNumber)
+            .Take(request.PageSize)
+            .ToListAsync();
+        var count = await query.CountAsync();
+
+        return new PagedResponse<List<Category>>(categories, count, request.PageSize);
     }
 }

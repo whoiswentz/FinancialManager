@@ -49,5 +49,11 @@ public class CategoryEndpoint : IAppEndpoint
             .WithName("Categories: Get")
             .WithSummary("Get Category")
             .Produces<Response<Category>>();
+
+        endpoints.MapGet("/v1/categories", async (ICategoryHandler handler, GetAllCategoriesRequest request) =>
+                await handler.GetAllAsync(request))
+            .WithName("Categories: GetAll")
+            .WithSummary("Get all categories")
+            .Produces<PagedResponse<List<Category>?>>();
     }
 }
