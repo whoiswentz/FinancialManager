@@ -2,5 +2,5 @@ namespace FinancialManager.Api.Endpoints;
 
 public interface IAppEndpoint
 {
-    void MapRoutes(IEndpointRouteBuilder routeBuilder);
+    static abstract void Map(IEndpointRouteBuilder app);
 }

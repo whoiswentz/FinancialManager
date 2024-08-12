@@ -43,7 +43,8 @@ public class CategoryHandler(AppDbContext context) : ICategoryHandler
     public async Task<Response<Category?>> DeleteAsync(DeleteCategoryRequest request)
     {
         var category = await context.Categories
-            .FirstOrDefaultAsync(x => x.Id == request.Id && x.UserId == request.UserId);
+            .FirstOrDefaultAsync(x => x.Id == request.Id);
+        // .FirstOrDefaultAsync(x => x.Id == request.Id && x.UserId == request.UserId);
         if (category is null) return new Response<Category?>(null, 404, "Category not found");
 
         context.Categories.Remove(category);
@@ -66,7 +67,7 @@ public class CategoryHandler(AppDbContext context) : ICategoryHandler
     {
         var query = context.Categories
             .AsNoTracking()
-            .Where(x => x.UserId == request.UserId)
+            // .Where(x => x.UserId == request.UserId)
             .OrderBy(x => x.Title);
         var categories = await query
             .Skip((request.PageSize - 1) * request.PageNumber)
