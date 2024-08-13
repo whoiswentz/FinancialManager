@@ -18,9 +18,9 @@ public class GetAllCategoriesEndpoint : IAppEndpoint
     }
 
     private static async Task<IResult> HandleAsync(
-        ICategoryHandler handler, 
+        ICategoryHandler handler,
         [FromQuery] int pageNumber = Constants.DefaultPageNumber,
-        [FromQuery] int pageSize = Constants.DefaultPageSize )
+        [FromQuery] int pageSize = Constants.DefaultPageSize)
     {
         var result = await handler.GetAllAsync(new GetAllCategoriesRequest
         {
