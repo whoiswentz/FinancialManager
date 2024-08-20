@@ -4666,19 +4666,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/vinicioswentz/.nuget/packages/": {}
+    "/Users/vinicios.wentz/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/vinicioswentz/Documents/FinancialManager/FinancialManager.Api/FinancialManager.Api.csproj",
+      "projectUniqueName": "/Users/vinicios.wentz/Documents/FinancialManager/FinancialManager.Api/FinancialManager.Api.csproj",
       "projectName": "FinancialManager.Api",
-      "projectPath": "/Users/vinicioswentz/Documents/FinancialManager/FinancialManager.Api/FinancialManager.Api.csproj",
-      "packagesPath": "/Users/vinicioswentz/.nuget/packages/",
-      "outputPath": "/Users/vinicioswentz/Documents/FinancialManager/FinancialManager.Api/obj/",
+      "projectPath": "/Users/vinicios.wentz/Documents/FinancialManager/FinancialManager.Api/FinancialManager.Api.csproj",
+      "packagesPath": "/Users/vinicios.wentz/.nuget/packages/",
+      "outputPath": "/Users/vinicios.wentz/Documents/FinancialManager/FinancialManager.Api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/vinicioswentz/.nuget/NuGet/NuGet.Config"
+        "/Users/vinicios.wentz/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -4690,8 +4690,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/vinicioswentz/Documents/FinancialManager/FinancialManager.Core/FinancialManager.Core.csproj": {
-              "projectPath": "/Users/vinicioswentz/Documents/FinancialManager/FinancialManager.Core/FinancialManager.Core.csproj"
+            "/Users/vinicios.wentz/Documents/FinancialManager/FinancialManager.Core/FinancialManager.Core.csproj": {
+              "projectPath": "/Users/vinicios.wentz/Documents/FinancialManager/FinancialManager.Core/FinancialManager.Core.csproj"
             }
           }
         }
@@ -4700,11 +4700,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -4749,7 +4744,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

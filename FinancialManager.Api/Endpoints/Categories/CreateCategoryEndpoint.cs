@@ -11,8 +11,7 @@ public class CreateCategoryEndpoint : IAppEndpoint
 {
     public static void Map(IEndpointRouteBuilder app)
     {
-        app
-            .MapPost("/", HandleAsync)
+        app.MapPost("/", HandleAsync)
             .WithName("Categories: Create")
             .WithSummary("Creates a new Category")
             .WithDescription("Creates a new category")
