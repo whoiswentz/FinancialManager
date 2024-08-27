@@ -1,4 +1,5 @@
 using FinancialManager.Api.Endpoints.Categories;
+using FinancialManager.Api.Endpoints.Transactions;
 using FinancialManager.Core.Request.Categories;
 
 namespace FinancialManager.Api.Endpoints;
@@ -17,6 +18,10 @@ public static class Endpoint
             .MapEndpoint<DeleteCategoryEndpoint>()
             .MapEndpoint<GetCategoryByIdEndpoint>()
             .MapEndpoint<GetAllCategoriesEndpoint>();
+
+        endpoints.MapGroup("/transactions")
+            .WithTags("Transactions")
+            .MapEndpoint<CreateTransactionEndpoint>();
     }
 
     private static IEndpointRouteBuilder MapEndpoint<T>(this IEndpointRouteBuilder app)

@@ -17,6 +17,7 @@ builder.Services
     .AddSwaggerGen(options => { options.CustomSchemaIds(type => type.FullName); })
     .AddDbContext<AppDbContext>(x => { x.UseSqlServer(connectionString); })
     .AddTransient<ICategoryHandler, CategoryHandler>()
+    .AddTransient<ITransactionHandler, TransactionHandler>()
     .AddTransient<IValidator<CreateCategoryRequest>, CreateCategoryRequestValidator>()
     .AddTransient<IValidator<UpdateCategoryRequest>, UpdateCategoryRequestValidator>();
 
